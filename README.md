@@ -1,4 +1,4 @@
-# gint project
+# [gint project](https://git.planet-casio.com/Lephenixnoir/gint)
 
 gint (pronounce “guin”) is an add-in unikernel for CASIO calculators of the
 fx-9860G II and fx-CG 50 families. It provides a mostly free-standing runtime
