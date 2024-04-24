@@ -3,7 +3,7 @@
 gint (pronounce “guin”) is an add-in unikernel for CASIO calculators of the
 fx-9860G II and fx-CG 50 families. It provides a mostly free-standing runtime
 and is used to develop add-ins under Linux, along with specialized GCC
-toolchains and the [fxSDK](/Lephenixnoir/fxsdk).
+toolchains and the [fxSDK](https://git.planet-casio.com/Lephenixnoir/fxsdk).
 
 When running in an add-in, gint takes control of the calculator's hardware
 from the operating system, and manages it with its own drivers. It exposes a
@@ -49,7 +49,7 @@ A couple of libraries extend these features, including:
 
 ## Installing with GiteaPC
 
-gint can be installed automatically with [GiteaPC](/Lephenixnoir/GiteaPC).
+gint can be installed automatically with [GiteaPC](https://git.planet-casio.com/Lephenixnoir/GiteaPC).
 
 ```bash
 % giteapc install Lephenixnoir/gint
@@ -57,11 +57,11 @@ gint can be installed automatically with [GiteaPC](/Lephenixnoir/GiteaPC).
 
 Normally you don't use gint directly, instead the fxSDK provides project
 templates that are set up to use gint. Please see the
-[fxSDK README file](/Lephenixnoir/fxsdk) for details.
+[fxSDK README file](https://git.planet-casio.com/Lephenixnoir/fxsdk) for details.
 
 ## Building and installing manually
 
-gint is built using the [fxSDK](/Lephenixnoir/fxsdk), which provides a suitable
+gint is built using the [fxSDK](https://git.planet-casio.com/Lephenixnoir/fxsdk), which provides a suitable
 CMake environment for the calculator. gint is always installed in the
 compiler's install path (as given by `sh-elf-gcc --print-search-dirs`) which is
 detected automatically, so normally you don't need to set the install prefix.
@@ -126,6 +126,6 @@ using the fxSDK, you will need to:
 * Link with `-T fxcg50.ld -lgint-cg -lopenlibm -lc` on fx-CG 50.
 
 If you don't have a standard library such as
-[Memallox's port of newlib](/PlaneteCasio/libc), you also need `-nostdlib`. I
+[Memallox's port of newlib](https://git.planet-casio.com/PlaneteCasio/libc), you also need `-nostdlib`. I
 typically use `-m3 -mb` or `-m4-nofpu -mb` to specify the platform, but that
 may not even be necessary.
